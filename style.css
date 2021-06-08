@@ -1,0 +1,95 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgba(130, 130, 255, 0.685) , rgba(255, 78, 107, 0.438));
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(39, 39, 39);
+            font-size: 4em;
+            font-weight: 300;
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 0.5em;
+        }
+   
+        input[type="text"] {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: rgb(216, 216, 216);
+            color: #000000;
+            font-family: inherit;
+            font-size: 0.4em;
+            border-radius: 9px;
+            padding: 3px;
+            display: inline-block;
+            visibility: initial;
+        }
+        input[type="datetime-local"]  {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: rgb(216, 216, 216);
+            color: #000000;
+            font-family: inherit;
+            font-size: 0.4em;
+            border-radius: 9px;
+            padding: 3px;
+            display: inline-block;
+            visibility: initial;
+        }
+
+        input[type="datetime-local"],
+        focus {
+            color: rgb(0, 0, 0);
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        }
+
+        input::-webkit-datetime-edit-ampm-field:focus,
+        input::-webkit-datetime-edit-day-field:focus,
+        input::-webkit-datetime-edit-hour-field:focus,
+        input::-webkit-datetime-edit-millisecond-field:focus,
+        input::-webkit-datetime-edit-minute-field:focus,
+        input::-webkit-datetime-edit-month-field:focus,
+        input::-webkit-datetime-edit-second-field:focus,
+        input::-webkit-datetime-edit-week-field:focus,
+        input::-webkit-datetime-edit-year-field:focus {
+            background-color: rgb(188, 203, 199);
+            color: inherit;
+            outline: none;
+        }
+
+        input::-webkit-datetime-edit-year-field[disabled],
+        input::-webkit-datetime-edit-month-field[disabled],
+        input::-webkit-datetime-edit-week-field[disabled],
+        input::-webkit-datetime-edit-day-field[disabled],
+        input::-webkit-datetime-edit-ampm-field[disabled],
+        input::-webkit-datetime-edit-hour-field[disabled],
+        input::-webkit-datetime-edit-millisecond-field[disabled],
+        input::-webkit-datetime-edit-minute-field[disabled],
+        input::-webkit-datetime-edit-second-field[disabled] {
+            background-color: rgb(188, 203, 199);
+            color: inherit;
+            outline: none;
+        }
+
+        :moz-placeholder 
+        ::-webkit-input-placeholder {
+            color: white;
+        }
+        button {
+            background-color: rgb(211, 211, 211);
+            color: rgb(73, 73, 73);
+            border-radius: 9px;
+            font-size: 0.6em;
+            padding: 8px;
+        }

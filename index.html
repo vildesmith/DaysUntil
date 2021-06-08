@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days until</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div id="input-hide">
+
+        <p>Tell ned til den store dagen!</p>
+
+        <label for="userOccasion">Hva skjer den store dagen?</label>
+        <input id="userOccasion" type="text" value="" placeholder="f.eks Mitt bryllup">
+        <br>
+
+        <label for="special-date">Hvilken dato er den store dagen?</label>
+
+        <!-- <input type="date" id="special-date" name="" value="" min="2021-05-01" max=""> -->
+
+        <input type="datetime-local" id="special-date" name="" value="" min="2021-05-01" max="">
+        <!-- <p>when?</p>
+        <label for="userYear">year:</label>
+        <input id="userYear" type="number" value="" placeholder="e.g. 2021">
+        <br>
+        <label for="userMonth">month:</label>
+        <input id="userMonth" type="number" value="" placeholder="e.g. 8">
+        <br>
+        <label for="userDay">day:</label>
+        <input id="userDay" type="number" value="" placeholder="e.g. 17">
+ -->
+
+
+
+        <br>
+
+        <button onclick="enterSpecialDate()">Enter</button>
+
+    </div>
+    <div id="countdown-hide" style="display: none;">
+
+        <p>Det er</p>
+
+        <div class="time">
+            <span id="days">NaN</span>
+            <span>dager</span>
+        </div>
+
+        <div class="time">
+            <span id="hours">NaN</span>
+            <span>timer</span>
+        </div>
+
+        <div class="time">
+            <span id="minutes">NaN</span>
+            <span>minutter</span>
+        </div>
+
+        <div class="time">
+            <span id="seconds">NaN</span>
+            <span>sekunder</span>
+        </div>
+
+        <p>til <span id="userOccasionOutput"></span></p>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
